@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+
+/* ******************* */
+.head{
+    text-align: center;
+    padding: 30px;
+}
+.head h1{
+    font-size: 40px;
+    font-weight: 900;
+    border-bottom: 5px solid #d0131c;
+    display: inline-block;
+    padding: 20px;
+}
+.head p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+@media (min-width:769px) and (max-width:1024px){
+    header{
+        padding: 0 40px;
+        /* background-color: red; */
+    }
+    .head h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .head p{
+        font-size: 16px;
+    }
+} 
+@media (min-width:481px) and (max-width:768px){
+    header{
+        padding: 0 20px;
+        /* background-color: red; */
+    }
+    .head h1{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .head p{
+        font-size: 14px;
+    }
+}
+@media (min-width:320px) and (max-width:480px){
+    header{
+        padding: 0;
+        /* background-color: red; */
+    }
+    .head h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .head p{
+        font-size: 14px;
+    }
+}
+/* ********************** */
+.gridCont{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+}
+.gridCont div:nth-child(1){
+    grid-row: 2 span;
+    display: flex;
+}
+.sectCard{
+    background-color: #292d33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.card1 h3{
+    font-size: 22px;
+    color: #999999;
+    letter-spacing: 2px;
+}
+.card1 p{
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+}
+.card1 ul{
+    display: flex;
+    gap: 15px;
+}
+.card1 i{
+    color: white;
+    font-size: 25px;
+}
+.card2 i{
+    border: 3px solid white ;
+    color: #999999;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.card2 h3{
+    font-size: 22px;
+    color: #999999;
+    letter-spacing: 2px;
+}
+.card2 p{
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+}
+.card2 ul li a{
+    color: white;
+    transition: .3s;
+    text-decoration: underline;
+}
+.card2 ul li a:hover{
+    color: #d0131c;
+}
+.sectFoot{
+    text-align: center;
+    padding: 30px 0;
+}
+.sectFoot a{
+    font-weight: 700;
+    color: #036244;
+    transition: .3s;
+}
+.sectFoot a:hover{
+    color: #d0131c;
+}
+@media (min-width:769px) and (max-width:1024px){
+    .gridCont{
+        padding: 0 30px;
+    }
+    .sectCard{
+        gap: 20px;
+    }
+    .card1 h3{
+        font-size: 20px;
+        color: #999999;
+        letter-spacing: 1px;
+    }
+    .card1 p{
+        color: white;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .card1 ul{
+        display: flex;
+        gap: 10px;
+    }
+    .card1 i{
+        color: white;
+        font-size: 20px;
+    }
+    .card2 i{
+        border: 3px solid white ;
+        color: #999999;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 25px;
+    }
+    .card2 h3{
+        font-size: 22px;
+        color: #999999;
+        letter-spacing: 1px;
+    }
+    .card2 p{
+        color: white;
+        text-align: center;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    .card2 ul li a{
+        color: white;
+        transition: .3s;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+} 
+@media (min-width:481px) and (max-width:768px){
+    .gridCont{ 
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .gridCont div:nth-child(1){
+        grid-column: 2 span;
+        display: flex;
+    }
+    .sectCard{
+        gap: 10px;
+        height: 200px;
+    }
+    .card1 h3{
+        font-size: 15px;
+        color: #999999;
+        letter-spacing: 0;
+        padding: 20px 0;
+    }
+    .card1 p{
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .card1 ul{
+        display: flex;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    .card1 i{
+        color: white;
+        font-size: 20px;
+    }
+    .card2 > a{
+        margin: 20px 0;
+    }
+    .card2 i{
+        border: 3px solid white ;
+        color: #999999;
+        padding: 5px;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+    .card2 h3{
+        font-size: 15px;
+        color: #999999;
+        letter-spacing: 1px;
+    }
+    .card2 p{
+        color: white;
+        text-align: center;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    .card2 ul li a{
+        color: white;
+        transition: .3s;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+    .card2 ul {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:320px) and (max-width:480px){
+    .gridCont{ 
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .gridCont div:nth-child(1){
+        display: flex;
+    }
+    .sectCard{
+        gap: 10px;
+    }
+    .card1 h3{
+        font-size: 15px;
+        color: #999999;
+        letter-spacing: 0;
+        padding: 20px 0;
+    }
+    .card1 p{
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    .card1 ul{
+        display: flex;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    .card1 i{
+        color: white;
+        font-size: 20px;
+    }
+    .card2 i{
+        border: 3px solid white ;
+        color: #999999;
+        padding: 5px;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+    .card2 > a{
+        margin: 10px 0;
+    }
+    .card2 h3{
+        font-size: 15px;
+        color: #999999;
+        letter-spacing: 1px;
+    }
+    .card2 p{
+        color: white;
+        text-align: center;
+        padding: 0 15px;
+        font-size: 12px;
+    }
+    .card2 ul li a{
+        color: white;
+        transition: .3s;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+    .sectFoot{
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}
+/* ********************** */
+.flexFoot{
+    background-color: #333333;
+    padding: 40px 0;
+    text-align: center;
+}
+.flexFoot span{
+    color: white;
+}
+.flexFoot a{
+    text-decoration: underline;
+    color: #a9f8df;
+    transition: .3s;
+}
+.flexFoot a:hover{
+    color: #a1a1a1;
+}
+@media (min-width:320px) and (max-width:480px){
+    .flexFoot{
+    padding: 20px 0;
+    font-size: 12px;
+    }
+}
